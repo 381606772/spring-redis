@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.connection.DataType;
+import org.springframework.data.redis.core.BoundValueOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -36,5 +37,19 @@ public class TestStringRedisTemplate {
         keys.forEach(System.out::println);
 
         stringRedisTemplate.renameIfAbsent("name", "newname");
+    }
+
+    @Test
+    public void testBoundValues() {
+        BoundValueOperations<String, String> nameBoundValueOperation = stringRedisTemplate.boundValueOps("babyname");
+        nameBoundValueOperation.set("fuxinyue");
+        nameBoundValueOperation.append(" my baby");
+        String babyname = nameBoundValueOperation.get();
+        System.out.println("babyname = " + babyname);
+
+//        stringRedisTemplate.boundListOps();
+//        stringRedisTemplate.boundSetOps();
+//        stringRedisTemplate.boundZSetOps()
+//        stringRedisTemplate.boundHashOps()
     }
 }
