@@ -3,10 +3,28 @@ server:
 spring:
   application:
     name: spring-redis
+  # redis 单节点或者主从负责架构
+#  redis:
+#    host: 192.168.1.236
+#    port: 7001
+#    database: 0
+  # redis 哨兵模式
+#  redis:
+#    sentinel:
+#      master: mymaster
+#      nodes: 192.168.1.236:26379
+#    password: 123
+  # redis 集群模式
   redis:
-    host: 192.168.1.236
-    port: 7001
-    database: 0
+    cluster:
+      nodes:
+        - 192.168.1.236:7001
+        - 192.168.1.236:7002
+        - 192.168.1.236:7003
+        - 192.168.1.236:8001
+        - 192.168.1.236:8002
+        - 192.168.1.236:8003
+
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
