@@ -1,8 +1,8 @@
 package com.springredis;
 
 import com.baizhi.BaizhiApplication;
-import com.baizhi.entity.Employee;
-import com.baizhi.service.IEmployeeService;
+import com.baizhi.mybatiscache.entity.Employee;
+import com.baizhi.mybatiscache.service.IEmployeeService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

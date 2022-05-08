@@ -1,10 +1,10 @@
-package com.baizhi.dao;
+package com.baizhi.mybatiscache.service;
 
-import com.baizhi.entity.User;
+import com.baizhi.mybatiscache.entity.User;
 
 import java.util.List;
 
-public interface UserDao {
+public interface IUserService {
     List<User> findAll();
 
     User findById(String id);

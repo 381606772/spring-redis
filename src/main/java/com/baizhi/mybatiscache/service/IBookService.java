@@ -1,6 +1,6 @@
-package com.baizhi.service;
+package com.baizhi.mybatiscache.service;
 
-import com.baizhi.entity.Book;
+import com.baizhi.mybatiscache.entity.Book;
 
 import java.util.List;
 

@@ -1,5 +1,7 @@
 server:
   port: 8001
+  servlet:
+    context-path: /redissession
 spring:
   application:
     name: spring-redis
@@ -33,7 +35,7 @@ spring:
     password: 123
 mybatis:
   mapper-locations: classpath:com/baizhi/mapper/*.xml
-  type-aliases-package: com.baizhi.entity
+  type-aliases-package: com.baizhi.mybatiscache.entity
 logging:
   level:
     com:

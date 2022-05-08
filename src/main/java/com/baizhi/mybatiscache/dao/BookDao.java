@@ -1,6 +1,6 @@
-package com.baizhi.dao;
+package com.baizhi.mybatiscache.dao;
 
-import com.baizhi.entity.Book;
+import com.baizhi.mybatiscache.entity.Book;
 
 import java.util.List;
 

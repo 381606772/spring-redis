@@ -1,6 +1,6 @@
-package com.baizhi.cache;
+package com.baizhi.mybatiscache.cache;
 
-import com.baizhi.util.ApplicationContextUtils;
+import com.baizhi.mybatiscache.util.ApplicationContextUtils;
 import org.apache.ibatis.cache.Cache;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;

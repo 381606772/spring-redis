@@ -1,7 +1,7 @@
-package com.baizhi.service;
+package com.baizhi.mybatiscache.service;
 
-import com.baizhi.dao.EmployeeDao;
-import com.baizhi.entity.Employee;
+import com.baizhi.mybatiscache.dao.EmployeeDao;
+import com.baizhi.mybatiscache.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.baizhi.dao.UserDao">
+<mapper namespace="com.baizhi.mybatiscache.dao.UserDao">
     <!-- 开启mybatis二级缓存 -->
-    <cache type="com.baizhi.cache.RedisCache"/>
+    <cache type="com.baizhi.mybatiscache.cache.RedisCache"/>
 
     <select id="findAll" resultType="User">
         select * from user1

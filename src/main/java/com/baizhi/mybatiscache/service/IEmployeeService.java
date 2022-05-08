@@ -1,6 +1,6 @@
-package com.baizhi.service;
+package com.baizhi.mybatiscache.service;
 
-import com.baizhi.entity.Employee;
+import com.baizhi.mybatiscache.entity.Employee;
 
 public interface IEmployeeService {
     Employee findEmployeeById(String id);

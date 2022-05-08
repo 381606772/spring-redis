@@ -1,4 +1,4 @@
-package com.baizhi.util;
+package com.baizhi.mybatiscache.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

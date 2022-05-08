@@ -2,10 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.baizhi.dao.EmployeeDao">
+<mapper namespace="com.baizhi.mybatiscache.dao.EmployeeDao">
     <!-- 开启mybatis二级缓存 -->
-    <!--<cache type="com.baizhi.cache.RedisCache"/>-->
-    <cache-ref namespace="com.baizhi.dao.UserDao"/>
+    <!--<cache type="com.baizhi.mybatiscache.cache.RedisCache"/>-->
+    <cache-ref namespace="com.baizhi.mybatiscache.dao.UserDao"/>
 
     <select id="findEmployeeById" parameterType="String" resultType="Employee">
         select * from t_employee where id = #{id}
